@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mod_reguest_websocket", "mod_reguest_websocket.csproj", "{5044F99E-5C81-498C-B41D-8BFA1F5C59F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5044F99E-5C81-498C-B41D-8BFA1F5C59F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5044F99E-5C81-498C-B41D-8BFA1F5C59F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5044F99E-5C81-498C-B41D-8BFA1F5C59F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5044F99E-5C81-498C-B41D-8BFA1F5C59F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD8809CE-1D70-4AB5-AEFF-49FB5A7B86CC}
+	EndGlobalSection
+EndGlobal
