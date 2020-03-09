@@ -53,6 +53,7 @@
             this.but_stop_request.TabIndex = 1;
             this.but_stop_request.Text = "остановить";
             this.but_stop_request.UseVisualStyleBackColor = true;
+            this.but_stop_request.Click += new System.EventHandler(this.but_stop_request_Click);
             // 
             // but_pick_pair
             // 
@@ -62,6 +63,7 @@
             this.but_pick_pair.TabIndex = 2;
             this.but_pick_pair.Text = "выбрать пару";
             this.but_pick_pair.UseVisualStyleBackColor = true;
+            this.but_pick_pair.Click += new System.EventHandler(this.but_pick_pair_Click);
             // 
             // textBox_para
             // 

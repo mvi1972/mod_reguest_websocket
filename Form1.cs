@@ -31,5 +31,15 @@ namespace mod_reguest_websocket
         {
 
         }
+
+        private void but_pick_pair_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void but_stop_request_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
