@@ -1,4 +1,10 @@
-﻿namespace mod_reguest_websocket
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ModReguestWebsocket
 {
     partial class Form1
     {
@@ -43,7 +49,7 @@
             this.but_start_request.TabIndex = 0;
             this.but_start_request.Text = "запросить";
             this.but_start_request.UseVisualStyleBackColor = true;
-            this.but_start_request.Click += new System.EventHandler(this.button1_Click);
+            this.but_start_request.Click += new System.EventHandler(this.But_start_request_Click);
             // 
             // but_stop_request
             // 
@@ -53,7 +59,7 @@
             this.but_stop_request.TabIndex = 1;
             this.but_stop_request.Text = "остановить";
             this.but_stop_request.UseVisualStyleBackColor = true;
-            this.but_stop_request.Click += new System.EventHandler(this.but_stop_request_Click);
+            this.but_stop_request.Click += new System.EventHandler(this.But_stop_request_click);
             // 
             // but_pick_pair
             // 
@@ -63,7 +69,7 @@
             this.but_pick_pair.TabIndex = 2;
             this.but_pick_pair.Text = "выбрать пару";
             this.but_pick_pair.UseVisualStyleBackColor = true;
-            this.but_pick_pair.Click += new System.EventHandler(this.but_pick_pair_Click);
+            this.but_pick_pair.Click += new System.EventHandler(this.But_pick_pair_click);
             // 
             // textBox_para
             // 
@@ -81,6 +87,7 @@
             this.textBox_data_websocket.Size = new System.Drawing.Size(535, 235);
             this.textBox_data_websocket.TabIndex = 4;
             this.textBox_data_websocket.Text = "данные потока";
+            this.textBox_data_websocket.TextChanged += new System.EventHandler(this.textBox_data_websocket_TextChanged);
             // 
             // Form1
             // 
@@ -98,6 +105,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void But_stop_request_click(object sender, EventArgs e)
+        {
+            
         }
 
         #endregion

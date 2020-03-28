@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace mod_reguest_websocket
+namespace ModReguestWebsocket
 {
     static class Program
     {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mod_reguest_websocket", "mod_reguest_websocket.csproj", "{5044F99E-5C81-498C-B41D-8BFA1F5C59F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModReguestWebsocket", "ModReguestWebsocket.csproj", "{5044F99E-5C81-498C-B41D-8BFA1F5C59F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
