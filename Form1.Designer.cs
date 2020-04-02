@@ -39,6 +39,7 @@ namespace ModReguestWebsocket
             this.but_pick_pair = new System.Windows.Forms.Button();
             this.textBox_para = new System.Windows.Forms.TextBox();
             this.textBox_data_websocket = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // but_start_request
@@ -89,11 +90,25 @@ namespace ModReguestWebsocket
             this.textBox_data_websocket.Text = "данные потока";
             this.textBox_data_websocket.TextChanged += new System.EventHandler(this.textBox_data_websocket_TextChanged);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.comboBox1.Location = new System.Drawing.Point(389, 318);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(158, 24);
+            this.comboBox1.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(559, 450);
+            this.ClientSize = new System.Drawing.Size(559, 454);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox_data_websocket);
             this.Controls.Add(this.textBox_para);
             this.Controls.Add(this.but_pick_pair);
@@ -119,6 +134,7 @@ namespace ModReguestWebsocket
         private System.Windows.Forms.Button but_pick_pair;
         private System.Windows.Forms.TextBox textBox_para;
         private System.Windows.Forms.TextBox textBox_data_websocket;
+        private ComboBox comboBox1;
     }
 }
 

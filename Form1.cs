@@ -12,6 +12,7 @@ using System.Net;
 using System.Web;
 using System.Windows.Forms;
 using WebSocketSharp;
+using System.IO;
 //using ModReguestWebsocket;
 
 
@@ -35,12 +36,23 @@ namespace ModReguestWebsocket
 
         private void But_start_request_Click(object sender, EventArgs e)
         {
-            WebRequest zapros = WebRequest.Create("https://binance.com");
-            WebResponse response = zapros.GetResponse();
-            textBox_data_websocket.Text = response.ToString();
-            
-            
-            // ghgdhjghjgfhjfhjkh
+            WebClient client = new WebClient();
+            Stream strm = client.OpenRead("https://www.binance.com/api/v1/aggTrades?limit=80&symbol=BTCUSDT");
+            StreamReader sr = new StreamReader(strm);
+            string line = string.Empty;
+            string message = string.Empty;
+
+            while ((line = sr.ReadLine()) != null)
+            {
+                message += line;
+            }
+                       
+
+            textBox_data_websocket.Text += Environment.NewLine + message.ToString();
+
+            // textBox_data_websocket.Text = + Environment.NewLine}
+
+
         }
 
         private void textBox_data_websocket_TextChanged(object sender, EventArgs e)

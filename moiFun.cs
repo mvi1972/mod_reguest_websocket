@@ -9,13 +9,21 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Net.Sockets;
 
+
+
 namespace ModReguestWebsocket
 {
-    public class WebSocket
+    public class MoiFun
     {
-        public static async Task PostRequestAsync()
+
+
+
+    }
+
+    
+        /* public static async Task PostRequestAsync()
         {
-            WebRequest request = WebRequest.Create("wss://fstream.binance.com");
+            //WebRequest request = WebRequest.Create("wss://fstream.binance.com");
             request.Method = "POST"; // для отправки используется метод Post
                                      // данные для отправки
             string data = "btcusdt@depth";
@@ -42,6 +50,8 @@ namespace ModReguestWebsocket
             }
             response.Close();
             //Console.WriteLine("Запрос выполнен...");
-        }
-    }
+            */
+             
+
+        
 }
